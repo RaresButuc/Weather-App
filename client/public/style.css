@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+}
+body,
+body *,
+body *::before,
+body *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+}
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#favBut {
+  border-radius: 10px;
+}
+
+#root {
+    text-align: center;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(37, 68, 102, 1) 54%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#square {
+    margin: 67px 20px 20px 50px;
+    background: lightgrey;
+    top: 120px ;
+    width: 300px;
+    border-radius: 10px;
+    outline: 5px solid aqua;
+  }
+  input:focus {
+    border: 2px solid orange;
+    outline: none;
+    border-radius: 10px;
+  }
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.favorites-container {
+  border-radius: 10px;
+  position: absolute;
+  top: 290px;
+  left: 73px;
+  width: 250px;
+  padding: 10px;
+  background-color: lightgray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: 5px solid aqua;
+  z-index: 9999;
+  display: none;
+}
+
+.favorites-card {
+  padding: 10px;
+  text-align: center;
+}
+
+.favorites-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#image {
+  border-radius: 10px;
+  /* outline: 5px solid orange; */
+  position: absolute;
+  bottom: 75px;
+  right: 80px;
+  width: 600px; 
+  height: auto;
+}
+
+#spinner:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input,
+textarea,
+select,
+button,
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+textarea {
+  resize: none;
+}
+
+[readonly] + span,
+[readonly] {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
